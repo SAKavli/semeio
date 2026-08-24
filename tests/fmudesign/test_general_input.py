@@ -29,7 +29,7 @@ def base_general_input_dict():
 
 ANY_TYPE = st.one_of(
     st.integers(),
-    st.floats(),
+    st.floats(allow_nan=False),
     st.text(),
     st.booleans(),
     st.none(),
