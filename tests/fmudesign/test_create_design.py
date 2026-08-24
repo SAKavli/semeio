@@ -15,8 +15,9 @@ import semeio
 from semeio.fmudesign import DesignMatrix, excel_to_dict
 from semeio.fmudesign import design_distributions as design_dist
 from semeio.fmudesign._excel_to_dict import _read_defaultvalues
-from semeio.fmudesign.create_design import MonteCarloSensitivity, _derive_rng
 from semeio.fmudesign.quality_report import print_corrmat
+from semeio.fmudesign.sensitivities import MonteCarloSensitivity
+from semeio.fmudesign.sensitivities.monte_carlo import _derive_rng
 
 TESTDATA = Path(__file__).parent / "data"
 
